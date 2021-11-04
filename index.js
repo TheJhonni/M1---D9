@@ -27,12 +27,18 @@ const selectNumber = function(eventData) {
 
 const getRandomNumber = function() {
     let randomNumber = Math.floor(Math.random() * 76);
-    if (randomNumber == document.querySelector("div").innerHTML) {
-        randomNumber.classList.add("new-number")
+    let allNumbers = document.getElementById("first-Div")
+    for (let allNumbers = 1; allNumbers <= 76; allNumbers++) {
+        if (randomNumber == allNumbers.innerText) {
+            allNumbers.classList.add("selected")
+        }
     }
+    
 }
-getRandomNumber();
 
+let buttonNode = document.getElementById("button")
+    buttonNode.onclick = getRandomNumber()
+    
 window.onload = function() {
     displayBingo()
 }
