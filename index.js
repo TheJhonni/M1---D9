@@ -24,15 +24,15 @@ const selectNumber = function(eventData) {
     clickedNumberNode.classList.add("selected")
 }
 
+
 const getRandomNumber = function() {
     let randomNumber = Math.floor(Math.random() * 76);
-    if (randomNumber ==  bingoNumber.innerText) {
-        randomNumber.classList.add("selected")
+    if (randomNumber == document.querySelector("div").innerHTML) {
+        randomNumber.classList.add("new-number")
     }
 }
+getRandomNumber();
 
 window.onload = function() {
     displayBingo()
-    getRandomNumber()
-    selectNumber()
 }
