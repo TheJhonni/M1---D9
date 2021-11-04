@@ -7,19 +7,53 @@ body {
 
 h1 {
     text-align: center;
-}
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    color: #ec0000;
+    text-transform: uppercase;
+    font-weight: bold;
+    }
 
-div {
-        background-color: rgb(26, 26, 26);
+#first-Div {
+        background-color: rgb(235, 221, 29);
         display: inline-block;
-        width: 12%;
-        min-height: 64px;
+        width: 88%;
+        min-height: 66px;
         text-align: center;
         padding-top: 32px;
         font-size: x-large;
-        border-color: rgb(49, 49, 49);
+        border-color: rgb(255, 00, 0);
         border-style: solid;
         border-width: 2px;
         margin: 3px;
         border-radius: 10px;
+}
+
+.selected {
+    border-color: rgba(124, 0, 0, 0.856);
+    background-color: rgb(249, 252, 70);
+    
+}
+
+.new-number {
+    background-color: rgb(199, 5, 5);
+    display: inline-block;
+    width: 12.5%;
+    min-height: 64px;
+    text-align: center;
+    padding-top: 32px;
+    font-size: x-large;
+    border-color: rgb(49, 49, 49);
+    border-style: solid;
+    border-width: 2px;
+    margin: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#button {
+    margin-left: 39%;
+    margin-top: 20px;
+    height: 50px;
 }
